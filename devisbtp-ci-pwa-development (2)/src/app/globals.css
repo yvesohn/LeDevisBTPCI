@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F8FAFC;
+  --ink: #0F172A;
+  --accent: #F59E0B;
+  --accent-dark: #D97706;
+}
+* { -webkit-tap-highlight-color: transparent; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Plus Jakarta Sans", Inter, ui-sans-system, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-variant-numeric: tabular-nums;
+  background: var(--bg);
+  color: var(--ink);
+  text-rendering: optimizeLegibility;
+}
+.tnum { font-variant-numeric: tabular-nums; }
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type=number] { -moz-appearance: textfield; appearance: textfield; }
+.no-scrollbar::-webkit-scrollbar { display: none; } .no-scrollbar { scrollbar-width: none; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(12px) } to { opacity: 1; transform: translateY(0) } }
+@keyframes scaleIn { from { opacity: 0; transform: scale(.96) translateY(8px) } to { opacity: 1; transform: scale(1) translateY(0) } }
+@keyframes pulseSoft { 0%,100% { opacity: 1 } 50% { opacity: .5 } }
+@keyframes scan { 0% { top: 8% } 50% { top: 88% } 100% { top: 8% } }
+@keyframes shimmer { from { background-position: 200% 0 } to { background-position: -200% 0 } }
+@keyframes progressStripe { from { transform: translateX(-100%) } to { transform: translateX(250%) } }
+@keyframes popIn { 0% { transform: scale(.85); opacity: 0 } 70% { transform: scale(1.04) } 100% { transform: scale(1); opacity: 1 } }
+.animate-fadeUp { animation: fadeUp .45s cubic-bezier(.22,.8,.32,1) both; }
+.animate-scaleIn { animation: scaleIn .35s cubic-bezier(.22,.8,.32,1) both; }
+.animate-pulseSoft { animation: pulseSoft 1.4s ease infinite; }
+.animate-popIn { animation: popIn .35s ease both; }
+.scanline { animation: scan 2.2s ease-in-out infinite; }
+.shimmer { background: linear-gradient(110deg, #F59E0B 30%, #FCD34D 50%, #F59E0B 70%); background-size: 200% 100%; animation: shimmer 1.6s linear infinite; }
+.progress-stripe { animation: progressStripe 1.3s ease-in-out infinite; }
+
+.card {
+  background: #fff;
+  border: 1px solid rgb(226 232 240 / .9);
+  box-shadow: 0 1px 2px rgb(15 23 42 / .04), 0 12px 32px -16px rgb(15 23 42 / .12);
+}
+input, select, textarea { font-size: 16px; } /* évite le zoom iOS */
+button { touch-action: manipulation; }

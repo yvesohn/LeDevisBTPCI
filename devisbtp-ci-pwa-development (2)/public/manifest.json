@@ -1,0 +1,28 @@
+{
+  "name": "DevisBTP CI — Devis BTP par IA en Côte d'Ivoire",
+  "short_name": "DevisBTP CI",
+  "description": "Générez vos Devis Quantitatifs Estimatifs (DQE) en FCFA avec les matériaux et prix du marché ivoirien. PDF, WhatsApp, Wave / Orange Money.",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#F8FAFC",
+  "theme_color": "#F59E0B",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "dir": "ltr",
+  "scope": "/",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-192.png", "sizes": "180x180", "type": "image/png", "purpose": "apple touch icon" }
+  ],
+  "categories": ["business", "productivity", "finance"],
+  "shortcuts": [
+    { "name": "Nouveau devis", "short_name": "Nouveau", "url": "/?tab=nouveau", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Mes devis", "short_name": "Devis", "url": "/?tab=devis" },
+    { "name": "Mes prix", "short_name": "Prix", "url": "/?tab=prix" }
+  ],
+  "prefer_related_applications": false
+}
