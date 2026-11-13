@@ -36,7 +36,7 @@ Application SaaS PWA de devis BTP par IA pour la Côte d'Ivoire. Ce guide couvre
 
 1. Pousser le dépôt, importer dans Vercel (ou `npm ci && npm run build && npm start` sur VPS avec reverse proxy HTTPS).
 2. Renseigner les variables d'environnement.
-3. Appliquer le schéma : `npx drizzle-kit push`.
+3. Appliquer le schéma : `npx drizzle-kit generate`.
 4. Créer les tables Supabase si utilisées : `/admin` → **Copier le script SQL Supabase** → SQL Editor → Run.
 5. Vérifier `https://votre-domaine/api/health` → `{"ok":true}`.
 
@@ -62,7 +62,7 @@ HTTPS est indispensable (installation PWA, caméra, presse-papiers).
 - [ ] Mot de passe du compte fondateur changé
 - [ ] `NEXT_PUBLIC_SITE_URL` renseigné
 - [ ] Liens Wave / Orange Money testés avec un petit montant
-- [ ] `npx drizzle-kit push` exécuté sur la base de production
+- [ ] `npx drizzle-kit generate` exécuté sur la base de production
 - [ ] Sauvegardes automatiques activées
 - [ ] `/api/health` et une génération de devis testés sur le domaine final
 
