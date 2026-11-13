@@ -6,15 +6,39 @@
   --accent: #F59E0B;
   --accent-dark: #D97706;
 }
-* { -webkit-tap-highlight-color: transparent; }
-html { scroll-behavior: smooth; }
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
   font-family: "Plus Jakarta Sans", Inter, ui-sans-system, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   font-variant-numeric: tabular-nums;
   background: var(--bg);
   color: var(--ink);
   text-rendering: optimizeLegibility;
 }
+
+a, button, input, select, textarea {
+  font: inherit;
+}
+
+img, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
 .tnum { font-variant-numeric: tabular-nums; }
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
 input[type=number] { -moz-appearance: textfield; appearance: textfield; }
